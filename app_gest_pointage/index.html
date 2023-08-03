@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pointage des Arrivées</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Pointage des Arrivées</h1>
+        <form id="pointageForm">
+            <div class="form-group">
+                <label for="nom">Nom de l'apprenant :</label>
+                <input type="text" id="nom" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="heureArrivee">Heure d'arrivée :</label>
+                <input type="time" id="heureArrivee" required>
+            </div>
+            
+            <button type="submit">Pointer</button>
+        </form>
+        
+        <div id="rapports">
+            <!-- Les rapports affichés ici après le pointage -->
+        </div>
+        
+        <!-- Ajout du bouton d'impression -->
+        <button id="boutonImprimer" onclick="imprimerRapports()">Imprimer la liste des présences</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
